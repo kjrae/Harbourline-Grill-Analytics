@@ -8,7 +8,7 @@ messy source extracts → a Snowflake pipeline with data-quality checks → a 4-
 > realistic patterns *and* realistic problems (duplicates, inconsistent store names, missed clock-outs,
 > wrong units), so the pipeline has something to clean and the dashboard has something to find.
 
-![Overview page](docs/images/overview.png)
+![Overview page](docs/images/Overview%20-%20Harbourline.png)
 
 ---
 
@@ -25,7 +25,7 @@ Every page follows the same flow: **what happened → where → why → what to 
 
 | Labour | Food & Menu | Recommendations |
 |---|---|---|
-| ![Labour](docs/images/labour.png) | ![Food & Menu](docs/images/food_menu.png) | ![Recommendations](docs/images/recommendations.png) |
+| ![Labour](docs/images/Labour%20-%20Harbourline.png) | ![Food & Menu](docs/images/Food%20%26%20Menu-%20Harbourline.png) | ![Recommendations](docs/images/Recommendations%20-%20Harbourline.png) |
 
 ---
 
