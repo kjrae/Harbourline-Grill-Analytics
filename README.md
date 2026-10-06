@@ -31,17 +31,22 @@ Every page follows the same flow: **what happened → where → why → what to 
 
 ## Architecture
 
-```mermaid
-flowchart LR
-    A["data/generate.py<br/>11 messy CSV extracts"] -->|upload to stage| B["RAW<br/>everything as text"]
+![Architecture: CSV extracts → Snowflake RAW → STAGING → CORE → Power BI](docs/images/architecture.png)
+
+<details>
+<summary>Mermaid version (editable)</summary>
+
+````mermaid
+flowchart TB
+    A["data/generate.py<br/>11 messy CSV extracts"] -->|upload| B["RAW<br/>everything as text"]
     B --> C["STAGING<br/>store & role name mapping"]
     C --> D["CORE<br/>clean star schema"]
-    D --> E["DQ_RESULTS<br/>24 checks: PASS / FIXED / FAIL"]
-    D --> F["AI_KPI_INPUT<br/>numbers + prompts (SQL)"]
-    F --> G["AI_RECOMMENDATIONS<br/>Claude-written notes"]
-    D -->|read-only role + token| H["Power BI<br/>4 pages, import mode"]
+    D --> E["DQ_RESULTS<br/>24 checks"]
+    D --> G["AI_RECOMMENDATIONS<br/>SQL builds prompts, Claude writes the note"]
+    D -->|read-only role + token| H["Power BI<br/>4-page dashboard"]
     G --> H
-```
+````
+</details>
 
 **Design choices**
 - **Three layers.** RAW holds data exactly as received, all as text, so a load never fails on a bad value. STAGING maps messy names to master data. CORE is the typed star schema Power BI reads.
