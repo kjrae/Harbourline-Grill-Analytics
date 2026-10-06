@@ -1,0 +1,127 @@
+{
+  "name": "Harbourline Grill (Navy)",
+  "dataColors": [
+    "#1c5cab",
+    "#eb6834",
+    "#1baf7a",
+    "#eda100",
+    "#e87ba4",
+    "#008300",
+    "#4a3aa7",
+    "#e34948"
+  ],
+  "foreground": "#0b0b0b",
+  "foregroundNeutralSecondary": "#52514e",
+  "foregroundNeutralTertiary": "#898781",
+  "background": "#fcfcfb",
+  "backgroundLight": "#f9f9f7",
+  "backgroundNeutral": "#e1e0d9",
+  "tableAccent": "#1c5cab",
+  "good": "#0ca30c",
+  "neutral": "#fab219",
+  "bad": "#d03b3b",
+  "minimum": "#5598e7",
+  "center": "#f0efec",
+  "maximum": "#e34948",
+  "null": "#c3c2b7",
+  "hyperlink": "#256abf",
+  "textClasses": {
+    "callout": {
+      "fontSize": 28,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#0b0b0b"
+    },
+    "title": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#0b0b0b"
+    },
+    "header": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#0b0b0b"
+    },
+    "label": {
+      "fontSize": 10,
+      "fontFace": "Segoe UI",
+      "color": "#52514e"
+    }
+  },
+  "visualStyles": {
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#1c5cab"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "outspace": [
+          {
+            "color": {
+              "solid": {
+                "color": "#1c5cab"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    },
+    "*": {
+      "*": {
+        "background": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#ffffff"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "show": false,
+            "radius": 10
+          }
+        ],
+        "dropShadow": [
+          {
+            "show": false
+          }
+        ],
+        "valueAxis": [
+          {
+            "gridlineShow": true,
+            "gridlineColor": {
+              "solid": {
+                "color": "#e1e0d9"
+              }
+            },
+            "labelColor": {
+              "solid": {
+                "color": "#898781"
+              }
+            }
+          }
+        ],
+        "categoryAxis": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": "#898781"
+              }
+            },
+            "gridlineShow": false
+          }
+        ]
+      }
+    }
+  }
+}
